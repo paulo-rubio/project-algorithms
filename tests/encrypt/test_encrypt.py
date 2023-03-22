@@ -15,6 +15,4 @@ def test_encrypt_message():
     criptyDataZero = 'gma tset'
     assert dataZero == criptyDataZero
 
-
     pytest.raises(TypeError, lambda: encrypt_message(0, "test amg"))
-    pass
