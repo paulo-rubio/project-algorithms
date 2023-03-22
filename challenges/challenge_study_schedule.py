@@ -3,7 +3,6 @@ def study_schedule(permanence_period, target_time):
     raise NotImplementedError
 
 
-
 def search(numbers, start, end):
     min_element = numbers[start]
     min_element_index = start
@@ -15,9 +14,10 @@ def search(numbers, start, end):
 
     return min_element_index
 
+
 def selection_sort(numbers):
     n = len(numbers)
 
-    for index in range(n - 1): 
-        min_element_index = search(numbers, index, n)
-        numbers[index], numbers[min_element_index] = numbers[min_element_index], numbers[index] 
+    for i in range(n - 1): 
+        min_i = search(numbers, i, n)
+        numbers[i], numbers[min_i] = numbers[min_i], numbers[i] 

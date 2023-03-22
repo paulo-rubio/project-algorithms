@@ -15,6 +15,7 @@ def is_anagram(first_string, second_string):
 
     return True
 
+
 def merge_sort(lst):
     if len(lst) <= 1:
         return lst
@@ -23,7 +24,6 @@ def merge_sort(lst):
     left = merge_sort(lst[:mid])
     right = merge_sort(lst[mid:])
     return merge(left, right)
-
 
 
 def merge(left, right):
