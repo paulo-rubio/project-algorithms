@@ -2,15 +2,15 @@ def find_duplicate(nums):
     if len(nums) < 2:
         return False
 
-    MIN_VALUE = 1
-    MAX_VALUE = len(nums) - 1
+    MIN_V = 1
+    MAX_V = len(nums) - 1
 
-    nums_sorted = sorted(nums)
+    n = sorted(nums)
 
-    for i in range(len(nums_sorted) - 1):
-        if not isinstance(nums_sorted[i], int) or nums_sorted[i] < MIN_VALUE or nums_sorted[i] > MAX_VALUE:
+    for i in range(len(n) - 1):
+        if not isinstance(n[i], int) or n[i] < MIN_V or n[i] > MAX_V:
             return False
-        if nums_sorted[i] == nums_sorted[i+1]:
-            return nums_sorted[i]
+        if n[i] == n[i+1]:
+            return n[i]
 
     return False

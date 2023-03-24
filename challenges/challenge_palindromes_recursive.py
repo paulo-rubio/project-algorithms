@@ -1,9 +1,9 @@
-def is_palindrome_recursive(word, low_index, high_index):
-    if len(word) == 0:
+def is_palindrome_recursive(wd, li, hi):
+    if len(wd) == 0:
         return False
 
-    elif low_index > high_index:
+    elif li > hi:
         return True
 
     else:
-        return word[low_index] == word[high_index] and is_palindrome_recursive(word, low_index + 1, high_index - 1)
+        return wd[li] == wd[hi] and is_palindrome_recursive(wd, li + 1, hi - 1)
