@@ -3,7 +3,7 @@ def study_schedule(permanence_period, target_time):
     for i in range(0, len(permanence_period)):
         entry = permanence_period[i][0]
         depart = permanence_period[i][1]
-        if type(entry)!= int or type(depart) != int:
+        if type(entry) != int or type(depart) != int:
             return None
         if target_time is None:
             return None
